@@ -1,11 +1,13 @@
-#include<iostream>
-#include<string>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    string str = "Rit";
-    string str1 = "esh";
-    cout<<str+str1;
+    char str[200] ;
+    char str1[200] ;
+    cin>>str;
+    cin>>str1;
+    strcat(str, str1);
+    cout<<str;
     return 0;
 }
