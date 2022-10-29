@@ -13,6 +13,7 @@ struct Array
     {
       cout<<arr.A[i]<<" ";
     }
+    cout<<endl;
   }
   void append(struct Array *arr,int x)
   {
@@ -26,18 +27,20 @@ struct Array
     int i;
     if(index>=0 && index<=arr->length)
     {
-      for(i=arr->length;i>index;i++)
+      for(i=arr->length;i>index;i--)
       {
         arr->A[i]=arr->A[i-1];
-        arr->A[index]=x;
-        arr->length++;
       }
+      arr->A[index]=x;
+      arr->length++;
     }
   }
 int main()
 {
-  struct Array arr1={{1,2,3,4,5},8,5};
-  append(&arr1,10);
+  struct Array arr1={{2,3,4,5,6},10,5};
+ // append(&arr1,10);
+  display(arr1);
+  insert(&arr1,1,5);
   display(arr1);
   return 0;
 }
