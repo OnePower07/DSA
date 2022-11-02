@@ -28,7 +28,6 @@ void insert (struct Array *arr, int index, int x)
      arr->length++;
   }
 }
-
 int Delete (struct Array *arr, int index)
 {
   int x=0;
