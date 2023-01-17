@@ -8,10 +8,10 @@ class node
 };
 int main()
 {
-  node* head;
-  node* one = nullptr;
-  node* two = nullptr;
-  node* three = nullptr;
+  node* head = NULL;
+  node* one = NULL;
+  node* two = NULL;
+  node* three = NULL;
 
   one = new node();
   two = new node();
