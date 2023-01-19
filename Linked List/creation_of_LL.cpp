@@ -95,6 +95,19 @@ class Linkedlist
     }
     return minimum;
   }
+  int search(int key)
+  {
+    node *p = head;
+    // node *q = NULL;
+    while(p != NULL)
+    {
+      if(key == p->data)
+      return 1;
+
+    p = p->next;
+    }
+    return 0;
+  }
 };
 int main()
 {
@@ -108,4 +121,5 @@ int main()
   cout<<l.add()<<endl;
   cout<<l.max()<<endl;
   cout<<l.min()<<endl;
+  cout<<l.search(29);
 }
